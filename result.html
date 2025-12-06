@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Please Wait</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+      background: #0f172a;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .box {
+      background: rgba(255,255,255,0.05);
+      padding: 30px 25px;
+      border-radius: 14px;
+      width: 90%;
+      max-width: 420px;
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 15px;
+      opacity: 0.85;
+      line-height: 1.6;
+    }
+
+    .loader {
+      margin: 18px auto 0;
+      width: 42px;
+      height: 42px;
+      border: 4px solid rgba(255,255,255,0.2);
+      border-top-color: #4c8bff;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="box">
+    <h1>Please wait…</h1>
+    <p>We are reviewing your account details.<br>
+    This will only take a moment.</p>
+    <div class="loader"></div>
+  </div>
+
+</body>
+</html>
